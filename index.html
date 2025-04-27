@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilel Adel | Maintenance Technician - Thermoplastic Injection Molding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a1a1a',
+                        darker: '#121212',
+                        primary: '#00c9c8',
+                        secondary: '#00ff9d',
+                        accent: '#0066ff',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #00c9c8, #00ff9d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 0.5rem;
+            padding: 2px;
+            background: linear-gradient(45deg, #00c9c8, #00ff9d);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+
+        .tech-icon:hover {
+            transform: translateY(-5px);
+            filter: drop-shadow(0 5px 15px rgba(0, 201, 200, 0.4));
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00c9c8, #00ff9d);
+            box-shadow: 0 0 0 4px rgba(0, 201, 200, 0.2);
+        }
+
+        .timeline-connector {
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            bottom: -1.5rem;
+            width: 2px;
+            background: linear-gradient(to bottom, #00c9c8, #00ff9d);
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+            perspective: 1000px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .project-card:hover .project-card-inner {
+            transform: rotateY(5deg);
+        }
+
+        .input-field {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #00c9c8;
+            box-shadow: 0 0 0 2px rgba(0, 201, 200, 0.2);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #00c9c8, #00ff9d);
+            margin-top: 0.5rem;
+        }
+
+        .hero-machine {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-darker bg-opacity-90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold gradient-text">Bilel Adel</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="#expertise" class="text-gray-300 hover:text-primary transition-colors">Expertise</a>
+                    <a href="#projects" class="text-gray-300 hover:text-primary transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-300 hover:text-primary transition-colors">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-primary transition-colors">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-300 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darker border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-gray-800 rounded-md">About</a>
+                <a href="#expertise"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-gray-800 rounded-md">Expertise</a>
+                <a href="#projects"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-gray-800 rounded-md">Projects</a>
+                <a href="#skills"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-gray-800 rounded-md">Skills</a>
+                <a href="#experience"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-gray-800 rounded-md">Experience</a>
+                <a href="#contact"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-gray-800 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="min-h-screen flex items-center justify-center pt-16 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-darker to-dark">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="gradient-text">Precision</span> in Every <span class="text-white">Cycle</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
+                    Optimizing thermoplastic injection molding processes through technical mastery and innovative
+                    problem-solving.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact"
+                        class="px-8 py-3 bg-primary text-darker font-medium rounded-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1 shadow-lg">
+                        Get In Touch
+                    </a>
+                    <a href="#projects"
+                        class="px-8 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all transform hover:-translate-y-1">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block relative">
+                <div class="hero-machine relative">
+                    <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M250 100L350 250L250 400L150 250L250 100Z" stroke="url(#paint0_linear)"
+                            stroke-width="2" stroke-linejoin="round" />
+                        <path d="M250 150L325 250L250 350L175 250L250 150Z" stroke="url(#paint1_linear)"
+                            stroke-width="2" stroke-linejoin="round" />
+                        <path d="M250 200L300 250L250 300L200 250L250 200Z" stroke="url(#paint2_linear)"
+                            stroke-width="2" stroke-linejoin="round" />
+                        <circle cx="250" cy="250" r="30" stroke="url(#paint3_linear)" stroke-width="2" />
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="150" y1="100" x2="350" y2="400"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00c9c8" />
+                                <stop offset="1" stop-color="#00ff9d" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x1="175" y1="150" x2="325" y2="350"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00c9c8" />
+                                <stop offset="1" stop-color="#00ff9d" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear" x1="200" y1="200" x2="300" y2="300"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00c9c8" />
+                                <stop offset="1" stop-color="#00ff9d" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear" x1="220" y1="220" x2="280" y2="280"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00c9c8" />
+                                <stop offset="1" stop-color="#00ff9d" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent opacity-20">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <a href="#about" class="text-gray-400 hover:text-primary transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">About <span class="gradient-text">Bilel
+                    Adel</span></h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <p class="text-lg text-gray-300 mb-6">
+                        With over a decade of hands-on experience in thermoplastic injection molding, I've developed a
+                        keen eye for precision and optimization in every aspect of the manufacturing process.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-6">
+                        My journey began with a fascination for how machines transform raw materials into complex parts,
+                        evolving into a career dedicated to perfecting this transformation through technical mastery and
+                        innovative problem-solving.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Working across international markets has given me a unique perspective on global manufacturing
+                        standards and the ability to adapt processes to diverse technical requirements and quality
+                        expectations.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-gray-300">Precision-focused</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-secondary"></div>
+                            <span class="text-gray-300">Process optimizer</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-accent"></div>
+                            <span class="text-gray-300">Technical problem solver</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 relative gradient-border p-1 rounded-lg max-w-md mx-auto">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            alt="Bilel Adel" class="w-full h-auto object-cover">
+                        <div class="p-6 bg-gray-900 bg-opacity-70 backdrop-blur-sm">
+                            <h3 class="text-xl font-bold text-white mb-2">Bilel Adel</h3>
+                            <p class="text-primary">Maintenance Technician</p>
+                            <p class="text-gray-400 mt-2">Thermoplastic Injection Molding Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Expertise Section -->
+    <section id="expertise" class="py-20 px-4 sm:px-6 lg:px-8 bg-darker">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Core <span
+                    class="gradient-text">Expertise</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Expertise Card 1 -->
+                <div
+                    class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Machine Installation & Configuration</h3>
+                    <p class="text-gray-300">
+                        Expert in setting up new injection molding machines, ensuring optimal configuration for specific
+                        material requirements and production goals.
+                    </p>
+                </div>
+
+                <!-- Expertise Card 2 -->
+                <div
+                    class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-sliders-h text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Process Parameter Fine-Tuning</h3>
+                    <p class="text-gray-300">
+                        Precision adjustment of temperature, pressure, and cycle parameters to achieve perfect part
+                        quality with maximum efficiency.
+                    </p>
+                </div>
+
+                <!-- Expertise Card 3 -->
+                <div
+                    class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cycle Time Optimization</h3>
+                    <p class="text-gray-300">
+                        Systematic analysis and improvement of cycle times without compromising part quality,
+                        significantly boosting production output.
+                    </p>
+                </div>
+
+                <!-- Expertise Card 4 -->
+                <div
+                    class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bug text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Defect Elimination</h3>
+                    <p class="text-gray-300">
+                        Advanced troubleshooting to identify root causes of defects like sink marks, flash, or short
+                        shots, implementing permanent solutions.
+                    </p>
+                </div>
+
+                <!-- Expertise Card 5 -->
+                <div
+                    class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tachometer-alt text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Process Regulation</h3>
+                    <p class="text-gray-300">
+                        Maintaining consistent production quality through real-time monitoring and adjustment of process
+                        variables.
+                    </p>
+                </div>
+
+                <!-- Expertise Card 6 -->
+                <div
+                    class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-project-diagram text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Material Transition Management</h3>
+                    <p class="text-gray-300">
+                        Efficient changeovers between different polymer types, minimizing downtime and material waste
+                        during transitions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Technical <span
+                    class="gradient-text">Projects</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-xl overflow-hidden">
+                    <div class="project-card-inner">
+                        <div class="gradient-border h-full">
+                            <div class="bg-gray-800 rounded-lg h-full">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                                    <i class="fas fa-industry text-6xl opacity-30"></i>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-white mb-2">High-Cavitation Tool Optimization</h3>
+                                    <p class="text-gray-400 mb-4">Automotive Components Manufacturer</p>
+                                    <p class="text-gray-300 mb-4">
+                                        Optimized a 64-cavity mold for automotive connectors, reducing cycle time by 22%
+                                        while eliminating flash defects that were causing 8% scrap rate.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Cycle
+                                            Time Reduction</span>
+                                        <span
+                                            class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Defect
+                                            Elimination</span>
+                                        <span
+                                            class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Process
+                                            Stability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card rounded-xl overflow-hidden">
+                    <div class="project-card-inner">
+                        <div class="gradient-border h-full">
+                            <div class="bg-gray-800 rounded-lg h-full">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-secondary/20 to-accent/20 flex items-center justify-center">
+                                    <i class="fas fa-cog text-6xl opacity-30"></i>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-white mb-2">Medical Device Production Setup</h3>
+                                    <p class="text-gray-400 mb-4">Medical Equipment Supplier</p>
+                                    <p class="text-gray-300 mb-4">
+                                        Commissioned a cleanroom injection molding cell for medical device production,
+                                        achieving Class 7 cleanliness standards and 99.98% first-pass yield.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Machine
+                                            Installation</span>
+                                        <span
+                                            class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Cleanroom
+                                            Compliance</span>
+                                        <span
+                                            class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Quality
+                                            Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card rounded-xl overflow-hidden">
+                    <div class="project-card-inner">
+                        <div class="gradient-border h-full">
+                            <div class="bg-gray-800 rounded-lg h-full">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-accent/20 to-primary/20 flex items-center justify-center">
+                                    <i class="fas fa-recycle text-6xl opacity-30"></i>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-white mb-2">Sustainable Material Transition</h3>
+                                    <p class="text-gray-400 mb-4">Consumer Products Company</p>
+                                    <p class="text-gray-300 mb-4">
+                                        Led the transition from virgin to 30% recycled content PP for packaging
+                                        applications, overcoming flow and shrinkage challenges while maintaining
+                                        dimensional stability.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Material
+                                            Science</span>
+                                        <span
+                                            class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Process
+                                            Adjustment</span>
+                                        <span
+                                            class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Sustainability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card rounded-xl overflow-hidden">
+                    <div class="project-card-inner">
+                        <div class="gradient-border h-full">
+                            <div class="bg-gray-800 rounded-lg h-full">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-secondary/20 to-primary/20 flex items-center justify-center">
+                                    <i class="fas fa-bolt text-6xl opacity-30"></i>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-white mb-2">Hot Runner System Troubleshooting</h3>
+                                    <p class="text-gray-400 mb-4">Electronics Housing Manufacturer</p>
+                                    <p class="text-gray-300 mb-4">
+                                        Diagnosed and resolved thermal imbalance in a 16-zone hot runner system that was
+                                        causing inconsistent part weights and cosmetic defects in thin-wall
+                                        applications.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Hot
+                                            Runner Expertise</span>
+                                        <span
+                                            class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Thermal
+                                            Analysis</span>
+                                        <span
+                                            class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Precision
+                                            Molding</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-darker">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Skills & <span
+                    class="gradient-text">Tools</span></h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skills Category 1 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-robot text-primary mr-3"></i>
+                        <span>Machinery Expertise</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Arburg, Engel, KraussMaffei</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Electric & Hybrid Machines</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Multi-component Molding</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Microcellular Foaming (MuCell)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Category 2 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-tools text-secondary mr-3"></i>
+                        <span>Auxiliary Equipment</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Hot Runner Systems (HRS, Mold-Masters)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Robotic Automation (Wittmann, Sepro)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Material Handling & Drying Systems</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Temperature Controllers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Category 3 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-laptop-code text-accent mr-3"></i>
+                        <span>Software & Analysis</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">Moldflow Simulation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">Scientific Molding Principles</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">DOE (Design of Experiments)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">SPC & Process Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Category 4 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-vial text-primary mr-3"></i>
+                        <span>Material Science</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Engineering Thermoplastics</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">High-Temperature Materials</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Recycled Content Materials</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-primary mr-3"></div>
+                            <span class="text-gray-300">Additive Masterbatches</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Category 5 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-search text-secondary mr-3"></i>
+                        <span>Troubleshooting</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Root Cause Analysis</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Process Window Development</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Mold Maintenance Strategies</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-secondary mr-3"></div>
+                            <span class="text-gray-300">Preventive Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Category 6 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-certificate text-accent mr-3"></i>
+                        <span>Certifications</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">Scientific Molding Certification</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">ISO 9001:2015 Internal Auditor</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">Machine-Specific Training</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-accent mr-3"></div>
+                            <span class="text-gray-300">Safety & Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Icons Grid -->
+            <div class="mt-16 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+                <div class="tech-icon flex flex-col items-center">
+                    <i class="fas fa-industry text-4xl text-primary mb-2"></i>
+                    <span class="text-gray-400 text-sm text-center">Injection Molding</span>
+                </div>
+                <div class="tech-icon flex flex-col items-center">
+                    <i class="fas fa-thermometer-half text-4xl text-secondary mb-2"></i>
+                    <span class="text-gray-400 text-sm text-center">Temperature Control</span>
+                </div>
+                <div class="tech-icon flex flex-col items-center">
+                    <i class="fas fa-tachometer-alt text-4xl text-accent mb-2"></i>
+                    <span class="text-gray-400 text-sm text-center">Process Monitoring</span>
+                </div>
+                <div class="tech-icon flex flex-col items-center">
+                    <i class="fas fa-cogs text-4xl text-primary mb-2"></i>
+                    <span class="text-gray-400 text-sm text-center">Machine Setup</span>
+                </div>
+                <div class="tech-icon flex flex-col items-center">
+                    <i class="fas fa-microscope text-4xl text-secondary mb-2"></i>
+                    <span class="text-gray-400 text-sm text-center">Quality Analysis</span>
+                </div>
+                <div class="tech-icon flex flex-col items-center">
+                    <i class="fas fa-chart-bar text-4xl text-accent mb-2"></i>
+                    <span class="text-gray-400 text-sm text-center">Data Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Timeline -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Professional <span
+                    class="gradient-text">Journey</span></h2>
+
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="space-y-10 pl-8 md:pl-12">
+                    <!-- Experience 1 -->
+                    <div class="relative timeline-item pl-6">
+                        <div class="absolute top-0 bottom-0 timeline-connector"></div>
+                        <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                <h3 class="text-xl font-bold text-white">Senior Maintenance Technician</h3>
+                                <span
+                                    class="text-primary text-sm font-medium bg-primary bg-opacity-10 px-3 py-1 rounded-full">2020
+                                    - Present</span>
+                            </div>
+                            <p class="text-gray-400 mb-2">Precision Components Manufacturing</p>
+                            <p class="text-gray-300 mb-4">
+                                Lead technician responsible for a fleet of 32 injection molding machines producing
+                                high-tolerance medical and automotive components. Implemented predictive maintenance
+                                program reducing unplanned downtime by 45%.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Process
+                                    Optimization</span>
+                                <span
+                                    class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Preventive
+                                    Maintenance</span>
+                                <span class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Team
+                                    Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="relative timeline-item pl-6">
+                        <div class="absolute top-0 bottom-0 timeline-connector"></div>
+                        <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                <h3 class="text-xl font-bold text-white">Process Technician</h3>
+                                <span
+                                    class="text-secondary text-sm font-medium bg-secondary bg-opacity-10 px-3 py-1 rounded-full">2016
+                                    - 2020</span>
+                            </div>
+                            <p class="text-gray-400 mb-2">Advanced Polymer Solutions</p>
+                            <p class="text-gray-300 mb-4">
+                                Specialized in troubleshooting complex molding issues and optimizing processes for
+                                engineering-grade materials. Developed standard operating procedures that improved
+                                consistency across three production shifts.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Material
+                                    Science</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Process
+                                    Documentation</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary bg-opacity-10 text-secondary text-sm rounded-full">Quality
+                                    Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="relative timeline-item pl-6">
+                        <div class="absolute top-0 bottom-0 timeline-connector"></div>
+                        <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                <h3 class="text-xl font-bold text-white">Machine Operator</h3>
+                                <span
+                                    class="text-accent text-sm font-medium bg-accent bg-opacity-10 px-3 py-1 rounded-full">2012
+                                    - 2016</span>
+                            </div>
+                            <p class="text-gray-400 mb-2">Plastico Manufacturing</p>
+                            <p class="text-gray-300 mb-4">
+                                Operated and maintained injection molding machines producing consumer goods. Recognized
+                                for exceptional quality performance and promoted to technician role after demonstrating
+                                advanced troubleshooting skills.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Machine
+                                    Operation</span>
+                                <span class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Quality
+                                    Control</span>
+                                <span
+                                    class="px-3 py-1 bg-accent bg-opacity-10 text-accent text-sm rounded-full">Technical
+                                    Aptitude</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="relative timeline-item pl-6">
+                        <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                <h3 class="text-xl font-bold text-white">Technical Education</h3>
+                                <span
+                                    class="text-primary text-sm font-medium bg-primary bg-opacity-10 px-3 py-1 rounded-full">2008
+                                    - 2012</span>
+                            </div>
+                            <p class="text-gray-400 mb-2">Advanced Manufacturing Institute</p>
+                            <p class="text-gray-300 mb-4">
+                                Completed specialized training in plastics technology, machine maintenance, and
+                                industrial automation. Graduated with honors and received the "Technical Excellence in
+                                Plastics" award.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Plastics
+                                    Technology</span>
+                                <span
+                                    class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Industrial
+                                    Automation</span>
+                                <span
+                                    class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm rounded-full">Technical
+                                    Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-darker">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Get In <span
+                    class="gradient-text">Touch</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Let's discuss your project</h3>
+                    <p class="text-gray-300 mb-8">
+                        Whether you need assistance with machine setup, process optimization, or troubleshooting complex
+                        molding issues, I'm here to help. Reach out to discuss how my expertise can benefit your
+                        operation.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div
+                                class="flex-shrink-0 h-10 w-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm font-medium">Email</h4>
+                                <a href="mailto:bilel.adel@example.com"
+                                    class="text-gray-300 hover:text-primary transition-colors">bilel.adel@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div
+                                class="flex-shrink-0 h-10 w-10 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center text-secondary mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm font-medium">Phone</h4>
+                                <a href="tel:+1234567890"
+                                    class="text-gray-300 hover:text-secondary transition-colors">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div
+                                class="flex-shrink-0 h-10 w-10 rounded-full bg-accent bg-opacity-10 flex items-center justify-center text-accent mr-4">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm font-medium">LinkedIn</h4>
+                                <a href="https://linkedin.com" target="_blank"
+                                    class="text-gray-300 hover:text-accent transition-colors">linkedin.com/in/bileladel</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="#"
+                            class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Full CV
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gradient-border p-1 rounded-lg">
+                    <div class="bg-gray-800 rounded-lg p-6">
+                        <form>
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                                    <input type="text" id="name"
+                                        class="w-full px-4 py-3 rounded-lg input-field focus:outline-none focus:ring-1 focus:ring-primary">
+                                </div>
+
+                                <div>
+                                    <label for="email"
+                                        class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                    <input type="email" id="email"
+                                        class="w-full px-4 py-3 rounded-lg input-field focus:outline-none focus:ring-1 focus:ring-primary">
+                                </div>
+
+                                <div>
+                                    <label for="subject"
+                                        class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                                    <input type="text" id="subject"
+                                        class="w-full px-4 py-3 rounded-lg input-field focus:outline-none focus:ring-1 focus:ring-primary">
+                                </div>
+
+                                <div>
+                                    <label for="message"
+                                        class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                                    <textarea id="message" rows="4"
+                                        class="w-full px-4 py-3 rounded-lg input-field focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit"
+                                        class="w-full px-6 py-3 bg-primary text-darker font-medium rounded-lg hover:bg-opacity-90 transition-all">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-dark border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-xl font-bold gradient-text">Bilel Adel</a>
+                    <p class="text-gray-400 mt-2">Precision in Thermoplastic Injection Molding</p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2023 Bilel Adel. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+
+</html>
